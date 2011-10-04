@@ -1,0 +1,17 @@
+Name: xorg-x11-proto-videoproto
+Summary: X.Org X11 Protocol videoproto
+Description: |
+    This extension provides a protocol for a video output mechanism,
+    mainly to rescale video playback in the video controller hardware.
+Version: 2.3.1
+Release: 0
+Group: Development/System
+License: MIT
+URL: http://www.x.org
+Sources:
+    - http://xorg.freedesktop.org/releases/individual/proto/videoproto-%{version}.tar.bz2
+
+Provides: videoproto
+Configure: configure
+ConfigOptions:
+    - --libdir=%{_datadir}
